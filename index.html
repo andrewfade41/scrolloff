@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollOff | Turn off the scroll. Turn on the competition.</title>
+    <meta name="description"
+        content="ScrollOff is the social challenge that helps you break doom-scrolling habits by turning screen time into a friendly competition.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-icon">🔥</span>
+                ScrollOff
+            </div>
+            <nav class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <a href="#join" class="btn btn-primary nav-btn">Join Challenge</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero document-section">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge">Introducing ScrollOff</div>
+                    <h1 class="hero-title">
+                        Turn off the scroll.<br>
+                        <span class="text-gradient">Turn on the competition.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        The social challenge that helps you break doom-scrolling habits by turning screen time into a
+                        friendly competition. Build streaks, climb leaderboards, and take back control of your
+                        attention.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#join" class="btn btn-primary btn-large glow-effect">Start a Challenge</a>
+                        <a href="#how-it-works" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="User 1" class="avatar">
+                            <img src="https://i.pravatar.cc/100?img=2" alt="User 2" class="avatar">
+                            <img src="https://i.pravatar.cc/100?img=3" alt="User 3" class="avatar">
+                            <div class="avatar more">+2k</div>
+                        </div>
+                        <p>Join thousands reclaiming their time.</p>
+                    </div>
+                </div>
+                <div class="hero-visual reveal right delay-1">
+                    <!-- We will replace this src once the image is generated, or use the artifact path -->
+                    <div class="glass-card mockup-container tilt-effect">
+                        <img id="mockup-img" src="mockup.png" alt="ScrollOff App Leaderboard Mockup"
+                            class="mockup-image">
+                        <div class="floating-badge badge-1 glass-card">
+                            <div class="badge-icon">👑</div>
+                            <div class="badge-text">
+                                <span class="badge-title">Alex leads</span>
+                                <span class="badge-sub">2h under limit</span>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-2 glass-card">
+                            <div class="badge-icon">🔥</div>
+                            <div class="badge-text">
+                                <span class="badge-title">14 Day Streak</span>
+                                <span class="badge-sub">Keep it up!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works document-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Less doom-scrolling means more focus, better habits, and time for real
+                        life.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card glass-card reveal up hover-lift">
+                        <div class="feature-icon icon-purple">🏆</div>
+                        <h3 class="feature-title">Compete with Friends</h3>
+                        <p class="feature-desc">Start a ScrollOff challenge and invite friends to join. Whoever scrolls
+                            the least wins.</p>
+                    </div>
+
+                    <div class="feature-card glass-card reveal up delay-1 hover-lift">
+                        <div class="feature-icon icon-emerald">⏱️</div>
+                        <h3 class="feature-title">Track Social Usage</h3>
+                        <p class="feature-desc">ScrollOff focuses on the apps that waste the most time, like Instagram,
+                            TikTok, and endless feeds.</p>
+                    </div>
+
+                    <div class="feature-card glass-card reveal up delay-2 hover-lift">
+                        <div class="feature-icon icon-blue">📊</div>
+                        <h3 class="feature-title">Leaderboards</h3>
+                        <p class="feature-desc">See how you rank against your friends and track daily scores. Who's
+                            winning the ScrollOff?</p>
+                    </div>
+
+                    <div class="feature-card glass-card reveal up delay-3 hover-lift">
+                        <div class="feature-icon icon-orange">🔥</div>
+                        <h3 class="feature-title">Build Streaks</h3>
+                        <p class="feature-desc">Stay under your scroll limit, grow your streak, and stay accountable and
+                            motivated.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="cta-section document-section">
+            <div class="container">
+                <div class="cta-card glass-card reveal scale">
+                    <h2 class="cta-title">Ready to take back your time?</h2>
+                    <p class="cta-desc">Join the waitlist today and be the first to start a ScrollOff challenge with
+                        your friends.</p>
+                    <form class="cta-form"
+                        onsubmit="event.preventDefault(); alert('Thanks for joining the waitlist!');">
+                        <input type="email" placeholder="Enter your email address" required class="glass-input">
+                        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">
+                <span class="logo-icon">🔥</span>
+                ScrollOff
+            </div>
+            <p class="footer-copy">&copy; 2026 ScrollOff. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
